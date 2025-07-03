@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html class="transition duration-300" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakhandhiya Fasya Albana | Network & Security Specialist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary-blue: #2563EB;
+            --dark-blue: #1E40AF;
+            --light-blue: #3B82F6;
+            --bg-gray: #F9FAFB;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--bg-gray);
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+        }
+
+        .progress-bar {
+            height: 10px;
+            border-radius: 5px;
+            background-color: #E5E7EB;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background-color: var(--primary-blue);
+            border-radius: 5px;
+            transition: width 1s ease-in-out;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);
+        }
+
+        .skill-card:hover .skill-icon {
+            transform: scale(1.1);
+        }
+
+        .nav-link:hover {
+            color: var(--primary-blue) !important;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--primary-blue);
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .hover-effect:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">RKH<span class="text-blue-600">Network</span></a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="nav-link text-gray-600 hover:text-blue-600 transition">Home</a>
+                <a href="#skills" class="nav-link text-gray-600 hover:text-blue-600 transition">Skills</a>
+                <a href="#experience" class="nav-link text-gray-600 hover:text-blue-600 transition">Experience</a>
+                <a href="#portfolio" class="nav-link text-gray-600 hover:text-blue-600 transition">Portfolio</a>
+                <a href="#contact" class="nav-link text-gray-600 hover:text-blue-600 transition">Contact</a>
+            </div>
+            <button class="md:hidden flex items-center">
+                <i class="fas fa-bars text-gray-600 text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 gradient-bg text-white fade-in">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 flex flex-col justify-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm <span class="underline decoration-4 decoration-blue-300">Rakhandhiya Fasya Albana</span></h1>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6">Network & Cybersecurity Enthusiast.</h2>
+                <p class="text-lg mb-8 opacity-90">I’m an enthusiastic and detail-oriented Telecommunication Engineering student with hands-on experience in network design, simulation, and analysis. Throughout my academic journey, I’ve worked on real-world projects involving routing protocols like EIGRP, OSPF, and RIP using tools such as Cisco Packet Tracer and GNS3. I’ve also explored VoIP systems using Kamailio and Asterisk, and developed queueing system models in MATLAB SimEvents, showcasing my ability to combine theory with practical implementation.</p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition">Contact Me</a>
+                    <a href="#portfolio" class="border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-600 transition">My Projects</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+                <div class="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 bg-blue-400 rounded-full overflow-hidden shadow-2xl">
+                    <div class="absolute inset-0 bg-blue-300 flex items-center justify-center">
+                        <img src="fotome2.jpg" alt="Foto Pribadi" class="object-cover w-full h-full rounded-full" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white fade-in">
+        <div class="max-w-screen-lg mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">My Technical Expertise</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Specialized skills in network infrastructure and security solutions</p>
+                <p class="text-gray-600 max-w-2xl mx-auto">*Caution* Some of this skills are still under development (Watch for my Core Skills below)</p>
+                <p class="text-gray-600 max-w-2xl mx-auto">I specialize in network infrastructure, including routing protocols, VoIP systems, 5G Core and queueing system models.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Network Skills -->
+                <div class="bg-gray-50 rounded-xl p-8 shadow-sm hover:shadow-md transition skill-card hover-effect">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-network-wired skill-icon text-4xl transition"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Network Engineering</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700">Cisco Networking</span>
+                                <span class="text-gray-500">95%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700">Network Architecture</span>
+                                <span class="text-gray-500">90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700">Wireless Networking</span>
+                                <span class="text-gray-500">80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700">Cloud Networking</span>
+                                <span class="text-gray-500">75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Security Skills -->
+                <div class="bg-gray-50 rounded-xl p-8 shadow-sm hover:shadow-md transition skill-card hover-effect">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-shield-alt skill-icon text-4xl transition"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Security Skills</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700">Penetration Testing</span>
+                                <span class="text-gray-500">85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700">Firewall Configuration</span>
+                                <span class="text-gray-500">88%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700">Vulnerability Assessment</span>
+                                <span class="text-gray-500">90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700">Security Compliance</span>
+                                <span class="text-gray-500">82%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 82%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Technical Skills -->
+                <div class="bg-gray-50 rounded-xl p-8 shadow-sm hover:shadow-md transition skill-card hover-effect">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-laptop-code skill-icon text-4xl transition"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Technical Proficiency</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700">Python</span>
+                                <span class="text-gray-500">90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700">Linux Administration</span>
+                                <span class="text-gray-500">85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700">SIEM Tools</span>
+                                <span class="text-gray-500">75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700">Docker/Kubernetes</span>
+                                <span class="text-gray-500">70%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50 fade-in">
+        <div class="max-w-screen-lg mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Professional Journey</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">My path through Network and Telecommunication domains</p>
+            </div>
+            
+            <div class="relative">
+                <!-- Timeline -->
+                <div class="border-l-2 border-blue-200 pl-8 md:pl-16 space-y-12">
+                   <!-- Experience 1 -->
+<div class="relative timeline-item">
+  <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition card-hover">
+    <div class="flex items-center mb-4">
+      <div class="bg-blue-100 p-3 rounded-lg mr-4 w-14 h-14 flex items-center justify-center">
+        <img src="logo cps2.png" alt="CPS Lab Logo" class="w-full h-full object-contain">
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold text-gray-800">Practicum Assistant</h3>
+        <p class="text-gray-600">Cyber Physical System Laboratory</p>
+      </div>
+      <div class="ml-auto bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">
+        2025 - Present
+      </div>
+    </div>
+    <p class="text-gray-700 mb-4">Responsible for mentoring college students on hands-on Lab Practicum for Telecommunication Networks & Traffic Course.</p>
+    <ul class="list-disc pl-5 text-gray-600 space-y-1">
+      <li>Assist on making the learning modules</li>
+      <li>Research in Network Topologies</li>
+      <li>Research in 5G Core, Voice over IP, RoIP</li>
+      <li>Mentored junior Telecommunication Engineering Students</li>
+    </ul>
+  </div>
+</div>
+
+                    
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Scroll Section -->
+<section id="scroll-skills" class="py-20 bg-white fade-in">
+  <div class="max-w-screen-lg mx-auto px-6">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">My Core Skills</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">Technologies and tools I'm proficient in</p>
+    </div>
+
+    <div class="overflow-hidden relative">
+      <div class="flex animate-scroll whitespace-nowrap space-x-6">
+        <span class="bg-blue-100 text-blue-700 px-5 py-2 rounded-full text-sm font-medium shadow hover:scale-105 transition">Cisco Networking</span>
+        <span class="bg-green-100 text-green-700 px-5 py-2 rounded-full text-sm font-medium shadow hover:scale-105 transition">Linux</span>
+        <span class="bg-yellow-100 text-yellow-800 px-5 py-2 rounded-full text-sm font-medium shadow hover:scale-105 transition">Python</span>
+        <span class="bg-purple-100 text-purple-700 px-5 py-2 rounded-full text-sm font-medium shadow hover:scale-105 transition">GNS3</span>
+        <span class="bg-pink-100 text-pink-700 px-5 py-2 rounded-full text-sm font-medium shadow hover:scale-105 transition">Wireshark</span>
+        <span class="bg-red-100 text-red-700 px-5 py-2 rounded-full text-sm font-medium shadow hover:scale-105 transition">Cisco Packet Tracer</span>
+        <span class="bg-indigo-100 text-indigo-700 px-5 py-2 rounded-full text-sm font-medium shadow hover:scale-105 transition">Routing Protocols</span>
+        <span class="bg-blue-100 text-blue-700 px-5 py-2 rounded-full text-sm font-medium shadow hover:scale-105 transition">Figma</span>
+        <span class="bg-green-100 text-green-700 px-5 py-2 rounded-full text-sm font-medium shadow hover:scale-105 transition">HTML</span>
+        <span class="bg-red-100 text-red-700 px-5 py-2 rounded-full text-sm font-medium shadow hover:scale-105 transition">Visual Studio Code</span>
+        <span class="bg-green-100 text-green-700 px-5 py-2 rounded-full text-sm font-medium shadow hover:scale-105 transition">Machine Learning</span>
+        <span class="bg-purple-100 text-purple-700 px-5 py-2 rounded-full text-sm font-medium shadow hover:scale-105 transition">Data Visualization</span>
+        <span class="bg-blue-100 text-blue-700 px-5 py-2 rounded-full text-sm font-medium shadow hover:scale-105 transition">CSS</span>
+        <span class="bg-indigo-100 text-indigo-700 px-5 py-2 rounded-full text-sm font-medium shadow hover:scale-105 transition">JavaScript</span>
+        <!-- Repeating skills to make the scroll feel infinite -->
+        <span class="bg-blue-100 text-blue-700 px-5 py-2 rounded-full text-sm font-medium shadow hover:scale-105 transition">Cisco Networking</span>
+        <span class="bg-yellow-100 text-yellow-800 px-5 py-2 rounded-full text-sm font-medium shadow hover:scale-105 transition">Python</span>
+        <span class="bg-red-100 text-red-700 px-5 py-2 rounded-full text-sm font-medium shadow hover:scale-105 transition">HTML</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .animate-scroll {
+    animation: scroll 25s linear infinite;
+  }
+</style>
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-white fade-in">
+        <div class="max-w-screen-lg mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">My Projects</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Implementations and experiments in network architectures</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition card-hover">
+                    <img src="idn_topology.png" alt="IDN Topology Project" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">IDN Network Topology Simulation</h3>
+                        <p class="text-gray-600 mb-4">Designed and simulated a multi-router Indonesian network topology using Cisco Packet Tracer with EIGRP and VLSM.</p>
+                        <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs">Cisco Packet Tracer</span>
+                        <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs">EIGRP</span>
+                        <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs">MPLS</span>
+                        <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs">Wireshark</span>
+                        <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs">Ubuntu Server</span>
+                    </div>
+                </div>
+            </div>
+
+                <!-- Project 2 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition card-hover">
+  <img src="Voip.png" alt="VoIP Project" class="w-full h-48 object-cover">
+  <div class="p-6">
+    <h3 class="text-xl font-semibold mb-2 text-gray-800">VoIP System with Asterisk Framework</h3>
+    <p class="text-gray-600 mb-4">Developed and tested a SIP-based VoIP system using Kamailio and Asterisk, simulating real-world communication scenarios.</p>
+    <div class="flex flex-wrap gap-2">
+      <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs">SIP</span>
+      <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs">Kamailio</span>
+      <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs">Asterisk</span>
+      <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs">Ubuntu Server</span>
+    </div>
+  </div>
+</div>
+
+                <!-- Project 3 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition card-hover">
+  <img src="open5gs_project.png" alt="Open5GS Project" class="w-full h-48 object-cover">
+  <div class="p-6">
+    <h3 class="text-xl font-semibold mb-2 text-gray-800">Open5GS – Private 5G Core Network</h3>
+    <p class="text-gray-600 mb-4">Built and deployed a private 5G core using Open5GS for lab-scale testing of 5G connectivity and QoS parameters using UERANSIM and Wireshark.</p>
+    <div class="flex flex-wrap gap-2">
+      <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs">Open5GS</span>
+      <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs">UERANSIM</span>
+      <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs">Wireshark</span>
+      <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs">Ubuntu Server</span>
+    </div>
+  </div>
+</div>
+
+                <!-- Project 4 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition card-hover">
+  <img src="simevents_project.png" alt="SimEvents Project" class="w-full h-48 object-cover">
+  <div class="p-6">
+    <h3 class="text-xl font-semibold mb-2 text-gray-800">Queueing System Simulation with SimEvents</h3>
+    <p class="text-gray-600 mb-4">Modeled and analyzed M/M/1 queueing system using MATLAB SimEvents, including VIP vs regular entity prioritization, probabilistic feedback, and performance metrics.</p>
+    <div class="flex flex-wrap gap-2">
+      <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs">MATLAB</span>
+      <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs">SimEvents</span>
+      <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs">Simulink</span>
+      <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs">Queueing Theory</span>
+    </div>
+  </div>
+</div>
+
+                <!-- Project 5 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition card-hover">
+                <img src="vlsm_topology.png" alt="VLSM Topology Project" class="w-full h-48 object-cover">
+                <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">VLSM-based Network Topology Simulation</h3>
+    <p class="text-gray-600 mb-4">Designed a scalable IP network using VLSM addressing across multi-router topology with EIGRP protocol. Simulated traffic routing and subnet optimization in Cisco Packet Tracer.</p>
+    <div class="flex flex-wrap gap-2">
+      <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs">VLSM</span>
+      <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs">Cisco Packet Tracer</span>
+      <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs">EIGRP</span>
+    </div>
+  </div>
+</div>
+
+                <!-- Project 6 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition card-hover">
+                <img src="Abilene.png" alt="VLSM Topology Project" class="w-full h-48 object-cover">
+                <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">Abilene Network Topology Simulation</h3>
+    <p class="text-gray-600 mb-4">Designed a multi-router Abilene topology with OSPF protocol. Simulated traffic routing and subnet optimization in Cisco Packet Tracer.</p>
+    <div class="flex flex-wrap gap-2">
+      <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs">VLSM</span>
+      <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs">Cisco Packet Tracer</span>
+      <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs">OSPF</span>
+    </div>
+  </div>
+</div>
+
+                
+                        </ul>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- Certification Section -->
+<section id="certification" class="py-20 bg-white fade-in">
+  <div class="max-w-screen-lg mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">Certifications</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">Recognitions and credentials in the field of Networking and Telecommunication</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Certificate 1 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+        <div class="flex items-center mb-4">
+          <i class="fas fa-certificate text-blue-600 text-3xl mr-4"></i>
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800">Cisco Certified Network Associate (CCNA)</h3>
+            <p class="text-gray-500 text-sm">Issued by Cisco Net Academy | 2025</p>
+          </div>
+        </div>
+      </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white fade-in">
+        <div class="max-w-screen-lg mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Contact Me</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Feel free to reach out for any inquiries or collaborations!</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                        <i class="fas fa-phone-alt mr-2 text-blue-600"></i> Phone
+                    </h3>
+                    <p class="text-gray-600">+62 878-8286-2815</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                        <i class="fas fa-envelope mr-2 text-blue-600"></i> Email
+                    </h3>
+                    <p class="text-gray-600">rakhandhiya.7@gmail.com</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                        <i class="fab fa-instagram mr-2 text-blue-600"></i> Instagram
+                    </h3>
+                    <p class="text-gray-600"><a href="https://www.instagram.com/rakhandhiyafa/" class="text-blue-600 hover:underline">@rakhandhiyafa</a></p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                        <i class="fab fa-linkedin mr-2 text-blue-600"></i> LinkedIn
+                    </h3>
+                    <p class="text-gray-600"><a href="https://www.linkedin.com/in/rakhandhiya/" class="text-blue-600 hover:underline">linkedin.com/in/Rakhandhiya Fasya Albana</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+```
